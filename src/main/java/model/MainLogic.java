@@ -3,31 +3,49 @@ package model;
 import javafx.scene.control.Button;
 
 public class MainLogic {
-    int one;
-    int two;
-    int three;
-    int four;
-    int five;
-    int six;
-    int seven;
-    int eight;
-    int nine;
+    private static final String PLAYER_X = "X";
+    private static final String PLAYER_O = "O";
 
+    public static void switchCharacterBtn(Button button, PlayerWrapper playerWrapper) {
+        if (button.getText().isEmpty()) {
+            if (playerWrapper.getCurrentPlayer() == 1) {
+                button.setText(PLAYER_X);
+                playerWrapper.setCurrentPlayer(2);
+            } else {
+                button.setText(PLAYER_O);
+                playerWrapper.setCurrentPlayer(1);
+            }
+        }
+    }
 
-    public static void switchCharacterBtn(Button button, PlayerWrapper player) {
-        switch (PlayerWrapper.value) {
-            case 1:
-                button.setText("X");
-                button.setDisable(true);
-                PlayerWrapper.value = 2;
-                break;
-            case 2:
-                button.setText("O");
-                button.setDisable(true);
-                PlayerWrapper.value = 1;
-                break;
-            default:
-                break;
+    public static boolean checkWin(Button[] buttons) {
+        // Check rows, columns, and diagonals for a win
+        return (checkLine(buttons[0], buttons[1], buttons[2]) ||
+                checkLine(buttons[3], buttons[4], buttons[5]) ||
+                checkLine(buttons[6], buttons[7], buttons[8]) ||
+                checkLine(buttons[0], buttons[3], buttons[6]) ||
+                checkLine(buttons[1], buttons[4], buttons[7]) ||
+                checkLine(buttons[2], buttons[5], buttons[8]) ||
+                checkLine(buttons[0], buttons[4], buttons[8]) ||
+                checkLine(buttons[2], buttons[4], buttons[6]));
+    }
+
+    private static boolean checkLine(Button b1, Button b2, Button b3) {
+        return (!b1.getText().isEmpty() && b1.getText().equals(b2.getText()) && b2.getText().equals(b3.getText()));
+    }
+
+    public static boolean checkDraw(Button[] buttons) {
+        for (Button button : buttons) {
+            if (button.getText().isEmpty()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void resetButtons(Button[] buttons) {
+        for (Button button : buttons) {
+            button.setText("");
         }
     }
 }

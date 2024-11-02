@@ -1,9 +1,17 @@
 package model;
 
 public class PlayerWrapper {
-    public static int value;
+    private int currentPlayer;
 
-    public PlayerWrapper(int value) {
-        this.value = value;
+    public PlayerWrapper(int currentPlayer) {
+        this.currentPlayer = currentPlayer;
+    }
+
+    public int getCurrentPlayer() {
+        return currentPlayer;
+    }
+
+    public void setCurrentPlayer(int currentPlayer) {
+        this.currentPlayer = currentPlayer;
     }
 }
