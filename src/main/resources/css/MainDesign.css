@@ -22,7 +22,7 @@
 
 .button {
     -fx-text-fill: #ffff;
-    -fx-background-color: #171717; /* Bootstrap primary color */
+    -fx-background-color: #191919; /* Bootstrap primary color */
     -fx-font-size: 16px; /* Font size for the buttons */
     -fx-padding: 10; /* Padding inside the buttons */
     -fx-border-radius: 5; /* Rounded corners */
@@ -36,15 +36,15 @@
 
 
 .button:hover {
-    -fx-background-color: #282828; /* Darker blue on hover */
+    -fx-background-color: rgba(25, 25, 25, 0.93); /* Darker blue on hover */
 }
 
 .button:pressed {
-    -fx-background-color: #3d3d3d; /* Even darker blue when pressed */
+    -fx-background-color: rgba(25, 25, 25, 0.85); /* Even darker blue when pressed */
 }
 
 .button:disabled {
-    -fx-background-color: #171717; /* Same color as normal state */
+    -fx-background-color: #191919; /* Same color as normal state */
     -fx-opacity: 1; /* Ensure the opacity is the same as normal state */
     -fx-text-fill: #ffff;
 }
