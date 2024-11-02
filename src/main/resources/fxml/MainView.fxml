@@ -7,25 +7,25 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 <AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
-    <GridPane layoutX="4.0" layoutY="7.0" prefHeight="187.0" prefWidth="191.0">
+    <GridPane hgap="5.0" layoutX="4.0" layoutY="4.0" prefHeight="190.0" prefWidth="190.0" vgap="5.0">
         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" />
-            <ColumnConstraints hgrow="SOMETIMES" />
-            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="ALWAYS" />
+            <ColumnConstraints hgrow="ALWAYS" />
+            <ColumnConstraints hgrow="ALWAYS" />
         </columnConstraints>
         <rowConstraints>
-            <RowConstraints vgrow="SOMETIMES" />
-            <RowConstraints vgrow="SOMETIMES" />
-            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
         </rowConstraints>
-        <Button fx:id="oneBtn" mnemonicParsing="false" onAction="#one" />
-        <Button fx:id="twoBtn" mnemonicParsing="false" onAction="#two" GridPane.columnIndex="1" />
-        <Button fx:id="fourBtn" mnemonicParsing="false" onAction="#four" GridPane.rowIndex="1" />
-        <Button fx:id="fiveBtn" mnemonicParsing="false" onAction="#five" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <Button fx:id="sevenBtn" mnemonicParsing="false" onAction="#seven" GridPane.rowIndex="2" />
-        <Button fx:id="eightBtn" mnemonicParsing="false" onAction="#eight" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-        <Button fx:id="threeBtn" mnemonicParsing="false" onAction="#three" GridPane.columnIndex="2" />
-        <Button fx:id="sixBtn" mnemonicParsing="false" onAction="#six" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-        <Button fx:id="nineBtn" mnemonicParsing="false" onAction="#nine" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Button fx:id="oneBtn" alignment="CENTER" mnemonicParsing="false" onAction="#one" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="twoBtn" alignment="CENTER" mnemonicParsing="false" onAction="#two" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="fourBtn" alignment="CENTER" mnemonicParsing="false" onAction="#four" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="fiveBtn" alignment="CENTER" mnemonicParsing="false" onAction="#five" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="sevenBtn" alignment="CENTER" mnemonicParsing="false" onAction="#seven" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="eightBtn" alignment="CENTER" mnemonicParsing="false" onAction="#eight" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="threeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#three" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="sixBtn" alignment="CENTER" mnemonicParsing="false" onAction="#six" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="nineBtn" alignment="CENTER" mnemonicParsing="false" onAction="#nine" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
     </GridPane>
 </AnchorPane>

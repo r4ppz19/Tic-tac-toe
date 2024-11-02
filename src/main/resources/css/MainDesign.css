@@ -1,0 +1,50 @@
+/* Global text style */
+.text {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Arial"; /* Set the font family */
+    -fx-font-size: 17px; /* Set the font size */
+    -fx-font-weight: bold; /* Set the font weight */
+}
+
+/* Style for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-padding: 10; /* Padding around the content */
+}
+
+/* Style for the GridPane */
+.grid-pane {
+    -fx-background-color: #ffffff; /* White background for the grid */
+    -fx-border-color: #cccccc; /* Light border color */
+    -fx-border-width: 1; /* Border width */
+    -fx-padding: 10; /* Padding within the grid */
+}
+
+.button {
+    -fx-text-fill: #ffff;
+    -fx-background-color: #171717; /* Bootstrap primary color */
+    -fx-font-size: 16px; /* Font size for the buttons */
+    -fx-padding: 10; /* Padding inside the buttons */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-background-radius: 5; /* Rounded background */
+
+    -fx-min-width: 20; /* Set minimum width to keep size consistent */
+    -fx-min-height: 20; /* Set minimum height to keep size consistent */
+    -fx-pref-width: 60; /* Preferred width to maintain size */
+    -fx-pref-height: 60; /* Preferred height to maintain size */
+}
+
+
+.button:hover {
+    -fx-background-color: #282828; /* Darker blue on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #3d3d3d; /* Even darker blue when pressed */
+}
+
+.button:disabled {
+    -fx-background-color: #171717; /* Same color as normal state */
+    -fx-opacity: 1; /* Ensure the opacity is the same as normal state */
+    -fx-text-fill: #ffff;
+}
