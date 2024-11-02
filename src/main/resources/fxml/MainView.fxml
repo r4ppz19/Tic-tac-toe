@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <GridPane layoutX="4.0" layoutY="7.0" prefHeight="187.0" prefWidth="191.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Button fx:id="oneBtn" mnemonicParsing="false" onAction="#one" />
+        <Button fx:id="twoBtn" mnemonicParsing="false" onAction="#two" GridPane.columnIndex="1" />
+        <Button fx:id="fourBtn" mnemonicParsing="false" onAction="#four" GridPane.rowIndex="1" />
+        <Button fx:id="fiveBtn" mnemonicParsing="false" onAction="#five" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="sevenBtn" mnemonicParsing="false" onAction="#seven" GridPane.rowIndex="2" />
+        <Button fx:id="eightBtn" mnemonicParsing="false" onAction="#eight" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="threeBtn" mnemonicParsing="false" onAction="#three" GridPane.columnIndex="2" />
+        <Button fx:id="sixBtn" mnemonicParsing="false" onAction="#six" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button fx:id="nineBtn" mnemonicParsing="false" onAction="#nine" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    </GridPane>
+</AnchorPane>
