@@ -3,10 +3,11 @@ package controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
+import model.AlertLoader;
 import model.MainLogic;
 import model.PlayerWrapper;
+import java.io.IOException;
+
 
 public class MainController {
     @FXML
@@ -28,7 +29,7 @@ public class MainController {
     @FXML
     public Button nineBtn;
 
-    private PlayerWrapper playerWrapper = new PlayerWrapper(1);
+    private final PlayerWrapper playerWrapper = new PlayerWrapper(1);
     private Button[] buttons;
 
     public void initialize() {
@@ -39,22 +40,19 @@ public class MainController {
         Button clickedButton = (Button) actionEvent.getSource();
         MainLogic.switchCharacterBtn(clickedButton, playerWrapper);
 
-        if (MainLogic.checkWin(buttons)) {
-            showAlert("Player " + (playerWrapper.getCurrentPlayer() == 1 ? "O" : "X") + " wins!");
-            MainLogic.resetButtons(buttons);
-        } else if (MainLogic.checkDraw(buttons)) {
-            showAlert("It's a draw!");
-            MainLogic.resetButtons(buttons);
+        try {
+            if (MainLogic.checkWin(buttons)) {
+                new AlertLoader().showAlert();
+                MainLogic.resetButtons(buttons);
+            } else if (MainLogic.checkDraw(buttons)) {
+                new AlertLoader().showAlert();
+                MainLogic.resetButtons(buttons);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
-    private void showAlert(String message) {
-        Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Game Over");
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
 
     @FXML
     public void one(ActionEvent actionEvent) { handleButtonAction(actionEvent); }

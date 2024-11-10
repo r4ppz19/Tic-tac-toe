@@ -29,6 +29,7 @@ public class Main extends Application {
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/MainDesign.css")).toExternalForm());
 
         // Set the application icon and scene to the main stage
+        mainStage.setResizable(false);
         mainStage.getIcons().add(imageIcon);
         mainStage.setScene(scene);
         mainStage.show(); // Display the main stage
