@@ -15,7 +15,7 @@ This is a simple TicTacToe game implemented in Java using JavaFX for the graphic
 ### Clone the repository
 
 ```sh
-git clone https://github.com/r4ppz19/TicTacToe.git
+git clone https://github.com/r4ppz19/Tic-tac-toe.git
 cd TicTacToe
 ```
 
