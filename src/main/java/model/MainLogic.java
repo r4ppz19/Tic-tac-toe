@@ -31,7 +31,17 @@ public class MainLogic {
     }
 
     private static boolean checkLine(Button b1, Button b2, Button b3) {
-        return (!b1.getText().isEmpty() && b1.getText().equals(b2.getText()) && b2.getText().equals(b3.getText()));
+        // Check if the first button is not empty
+        boolean isFirstButtonNotEmpty = !b1.getText().isEmpty();
+        
+        // Check if the text of the first button is equal to the text of the second button
+        boolean isFirstEqualToSecond = b1.getText().equals(b2.getText());
+        
+        // Check if the text of the second button is equal to the text of the third button
+        boolean isSecondEqualToThird = b2.getText().equals(b3.getText());
+        
+        // Return true if all conditions are met, otherwise return false
+        return isFirstButtonNotEmpty && isFirstEqualToSecond && isSecondEqualToThird;
     }
 
     public static boolean checkDraw(Button[] buttons) {

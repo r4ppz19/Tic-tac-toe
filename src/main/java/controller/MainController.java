@@ -1,13 +1,13 @@
 package controller;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import model.AlertLoader;
 import model.MainLogic;
 import model.PlayerWrapper;
-import java.io.IOException;
-
 
 public class MainController {
     @FXML
@@ -41,11 +41,19 @@ public class MainController {
         MainLogic.switchCharacterBtn(clickedButton, playerWrapper);
 
         try {
+            System.out.println("Checking for a win");
             if (MainLogic.checkWin(buttons)) {
-                new AlertLoader().showAlert();
+                System.out.println("Someone won");
+                if (playerWrapper.getCurrentPlayer() == 2) {
+                    System.out.println("X win");
+                    new AlertLoader().playerXWin();
+                } else {
+                    System.out.printf("O win");
+                    new AlertLoader().playerOWin();
+                }
                 MainLogic.resetButtons(buttons);
             } else if (MainLogic.checkDraw(buttons)) {
-                new AlertLoader().showAlert();
+                new AlertLoader().draw();
                 MainLogic.resetButtons(buttons);
             }
         } catch (IOException e) {

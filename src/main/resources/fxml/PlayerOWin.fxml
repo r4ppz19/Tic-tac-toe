@@ -6,7 +6,7 @@
 
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="143.0" prefWidth="227.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.AlertLoader">
    <children>
-      <Label alignment="CENTER" prefHeight="47.0" prefWidth="173.0" text="THANK YOU FOR PLAYING">
+      <Label alignment="CENTER" prefHeight="47.0" prefWidth="173.0" text="Player O Win">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Label>
