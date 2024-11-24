@@ -10,7 +10,7 @@ This is a simple TicTacToe game implemented in Java using JavaFX for the graphic
 #
 ![TicTacToe Game](src/main/resources/images/tictactoe.png)
 
-## Getting Started
+## How To Run
 
 ### Clone the repository
 
