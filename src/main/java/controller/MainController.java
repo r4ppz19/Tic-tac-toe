@@ -49,7 +49,7 @@ public class MainController {
                     System.out.println("X win");
                     new AlertLoader().playerXWin();
                 } else {
-                    System.out.printf("O win");
+                    System.out.print("O win");
                     new AlertLoader().playerOWin();
                 }
                 MainLogic.resetButtons(buttons);
@@ -58,7 +58,7 @@ public class MainController {
                 MainLogic.resetButtons(buttons);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("IO Exception");
         }
     }
 }
