@@ -1,39 +1,29 @@
-/* Global text style */
-.text {
-    -fx-text-fill: #ffffff;
-    -fx-font-family: "Arial"; /* Set the font family */
-    -fx-font-size: 17px; /* Set the font size */
-    -fx-font-weight: bold; /* Set the font weight */
-}
-
-/* Style for the AnchorPane */
 .anchor-pane {
     -fx-background-color: #f0f0f0; /* Light gray background */
-    -fx-padding: 10; /* Padding around the content */
+    -fx-padding: 10px; /* Padding around the content */
 }
 
 /* Style for the GridPane */
 .grid-pane {
     -fx-background-color: #ffffff; /* White background for the grid */
     -fx-border-color: #cccccc; /* Light border color */
-    -fx-border-width: 1; /* Border width */
-    -fx-padding: 10; /* Padding within the grid */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 10px; /* Padding within the grid */
 }
 
 .button {
     -fx-text-fill: #ffff;
     -fx-background-color: #191919; /* Bootstrap primary color */
     -fx-font-size: 16px; /* Font size for the buttons */
-    -fx-padding: 10; /* Padding inside the buttons */
-    -fx-border-radius: 5; /* Rounded corners */
-    -fx-background-radius: 5; /* Rounded background */
+    -fx-padding: 10px; /* Padding inside the buttons */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded background */
 
-    -fx-min-width: 20; /* Set minimum width to keep size consistent */
-    -fx-min-height: 20; /* Set minimum height to keep size consistent */
-    -fx-pref-width: 60; /* Preferred width to maintain size */
-    -fx-pref-height: 60; /* Preferred height to maintain size */
+    -fx-min-width: 20px; /* Set minimum width to keep size consistent */
+    -fx-min-height: 20px; /* Set minimum height to keep size consistent */
+    -fx-pref-width: 60px; /* Preferred width to maintain size */
+    -fx-pref-height: 60px; /* Preferred height to maintain size */
 }
-
 
 .button:hover {
     -fx-background-color: rgba(25, 25, 25, 0.93); /* Darker blue on hover */
