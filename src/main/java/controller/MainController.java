@@ -36,6 +36,7 @@ public class MainController {
         buttons = new Button[]{oneBtn, twoBtn, threeBtn, fourBtn, fiveBtn, sixBtn, sevenBtn, eightBtn, nineBtn};
     }
 
+    @FXML
     public void handleButtonAction(ActionEvent actionEvent) {
         Button clickedButton = (Button) actionEvent.getSource();
         MainLogic.switchCharacterBtn(clickedButton, playerWrapper);
@@ -60,24 +61,4 @@ public class MainController {
             e.printStackTrace();
         }
     }
-
-
-    @FXML
-    public void one(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
-    @FXML
-    public void two(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
-    @FXML
-    public void three(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
-    @FXML
-    public void four(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
-    @FXML
-    public void five(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
-    @FXML
-    public void six(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
-    @FXML
-    public void seven(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
-    @FXML
-    public void eight(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
-    @FXML
-    public void nine(ActionEvent actionEvent) { handleButtonAction(actionEvent); }
 }

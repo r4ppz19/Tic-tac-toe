@@ -18,14 +18,14 @@
             <RowConstraints vgrow="ALWAYS" />
             <RowConstraints vgrow="ALWAYS" />
         </rowConstraints>
-        <Button fx:id="oneBtn" alignment="CENTER" mnemonicParsing="false" onAction="#one" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
-        <Button fx:id="twoBtn" alignment="CENTER" mnemonicParsing="false" onAction="#two" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
-        <Button fx:id="fourBtn" alignment="CENTER" mnemonicParsing="false" onAction="#four" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
-        <Button fx:id="fiveBtn" alignment="CENTER" mnemonicParsing="false" onAction="#five" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
-        <Button fx:id="sevenBtn" alignment="CENTER" mnemonicParsing="false" onAction="#seven" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
-        <Button fx:id="eightBtn" alignment="CENTER" mnemonicParsing="false" onAction="#eight" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
-        <Button fx:id="threeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#three" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
-        <Button fx:id="sixBtn" alignment="CENTER" mnemonicParsing="false" onAction="#six" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
-        <Button fx:id="nineBtn" alignment="CENTER" mnemonicParsing="false" onAction="#nine" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="oneBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="twoBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="fourBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="fiveBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="sevenBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="eightBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="threeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="sixBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+        <Button fx:id="nineBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
     </GridPane>
 </AnchorPane>
