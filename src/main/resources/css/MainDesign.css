@@ -7,9 +7,13 @@
 
 /* Style for the GridPane */
 .grid-pane {
+    background-color: #ffffff; /* White background for the grid */
     -fx-background-color: #ffffff; /* White background for the grid */
+    border-color: #cccccc; /* Light border color */
     -fx-border-color: #cccccc; /* Light border color */
+    border-width: 1px; /* Border width */
     -fx-border-width: 1px; /* Border width */
+    padding: 10px; /* Padding within the grid */
     -fx-padding: 10px; /* Padding within the grid */
 }
 
