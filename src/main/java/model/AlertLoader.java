@@ -19,6 +19,7 @@ public class AlertLoader {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/PlayerOWin.fxml")));
         Scene scene = new Scene(root);
         alertStage1.setScene(scene);
+        alertStage1.setTitle("Alert");
         alertStage1.setResizable(false);
         alertStage1.getIcons().add(imageIcon);
         alertStage1.initModality(Modality.APPLICATION_MODAL);
@@ -31,6 +32,7 @@ public class AlertLoader {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/PlayerXWin.fxml")));
         Scene scene = new Scene(root);
         alertStage2.setScene(scene);
+        alertStage2.setTitle("Alert");
         alertStage2.setResizable(false);
         alertStage2.getIcons().add(imageIcon);
         alertStage2.initModality(Modality.APPLICATION_MODAL);
@@ -43,6 +45,7 @@ public class AlertLoader {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/DrawView.fxml")));
         Scene scene = new Scene(root);
         alertStage3.setScene(scene);
+        alertStage3.setTitle("Alert");
         alertStage3.setResizable(false);
         alertStage3.getIcons().add(imageIcon);
         alertStage3.initModality(Modality.APPLICATION_MODAL);
