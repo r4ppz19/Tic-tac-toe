@@ -30,6 +30,7 @@ public class Main extends Application {
 
         // Set the application icon and scene to the main stage
         mainStage.getIcons().add(imageIcon);
+        mainStage.setTitle("r4ppz");
         mainStage.setScene(scene);
         mainStage.setResizable(false);
         mainStage.show(); // Display the main stage
