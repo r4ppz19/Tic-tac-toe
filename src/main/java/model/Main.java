@@ -17,7 +17,7 @@ public class Main extends Application {
     @Override
     public void start(Stage mainStage) throws Exception {
         // Load the application icon
-        Image imageIcon = new Image("/images/r4ppzIcon.png");
+        Image imageIcon = new Image(Objects.requireNonNull(getClass().getResource("/images/r4ppzIcon.png")).toExternalForm());
 
         // Load the FXML layout for the main view
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/MainView.fxml")));
@@ -29,9 +29,9 @@ public class Main extends Application {
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/MainDesign.css")).toExternalForm());
 
         // Set the application icon and scene to the main stage
-        mainStage.setResizable(false);
         mainStage.getIcons().add(imageIcon);
         mainStage.setScene(scene);
+        mainStage.setResizable(false);
         mainStage.show(); // Display the main stage
     }
 }
