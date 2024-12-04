@@ -46,10 +46,10 @@ public class MainController {
             if (MainLogic.checkWin(buttons)) {
                 System.out.println("Someone won");
                 if (playerWrapper.getCurrentPlayer() == 2) {
-                    System.out.println("X win");
+                    System.out.println("X win\n\n");
                     new AlertLoader().playerXWin();
                 } else {
-                    System.out.print("O win");
+                    System.out.print("O win\n\n");
                     new AlertLoader().playerOWin();
                 }
                 MainLogic.resetButtons(buttons);
