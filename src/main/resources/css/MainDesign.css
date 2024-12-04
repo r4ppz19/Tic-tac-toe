@@ -37,15 +37,19 @@
 }
 
 .button:hover {
+    background-color: rgba(25, 25, 25, 0.93); /* Darker blue on hover */
     -fx-background-color: rgba(25, 25, 25, 0.93); /* Darker blue on hover */
 }
 
 .button:pressed {
+    background-color: rgba(25, 25, 25, 0.85); /* Even darker blue when pressed */
     -fx-background-color: rgba(25, 25, 25, 0.85); /* Even darker blue when pressed */
 }
 
 .button:disabled {
+    background-color: #191919; /* Same color as normal state */
     -fx-background-color: #191919; /* Same color as normal state */
+    opacity: 1; /* Ensure the opacity is the same as normal state */
     -fx-opacity: 1; /* Ensure the opacity is the same as normal state */
     -fx-text-fill: #ffff;
 }
