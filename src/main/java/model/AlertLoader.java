@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class AlertLoader {
-    Image imageIcon = new Image("/images/r4ppz icon.png");
+    Image imageIcon = new Image(Objects.requireNonNull(getClass().getResource("/images/r4ppzIcon.png")).toExternalForm());
 
     // Player O win window pop up
     public void playerOWin() throws IOException {
