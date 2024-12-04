@@ -1,5 +1,7 @@
 .anchor-pane {
+    background-color: #f0f0f0; /* Light gray background */
     -fx-background-color: #f0f0f0; /* Light gray background */
+    padding: 10px; /* Padding around the content */
     -fx-padding: 10px; /* Padding around the content */
 }
 
