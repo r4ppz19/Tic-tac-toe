@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="100.0" prefWidth="150.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.AlertLoader">
+<AnchorPane prefHeight="100.0" prefWidth="150.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.AlertLoader">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="31.0" prefHeight="39.0" prefWidth="79.0" text="Draw" textAlignment="CENTER">
          <font>
