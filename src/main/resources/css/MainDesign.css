@@ -1,55 +1,39 @@
 .anchor-pane {
-    background-color: #f0f0f0; /* Light gray background */
     -fx-background-color: #f0f0f0; /* Light gray background */
-    padding: 10px; /* Padding around the content */
     -fx-padding: 10px; /* Padding around the content */
 }
 
 /* Style for the GridPane */
 .grid-pane {
-    background-color: #ffffff; /* White background for the grid */
     -fx-background-color: #ffffff; /* White background for the grid */
-    border-color: #cccccc; /* Light border color */
     -fx-border-color: #cccccc; /* Light border color */
-    border-width: 1px; /* Border width */
     -fx-border-width: 1px; /* Border width */
-    padding: 10px; /* Padding within the grid */
     -fx-padding: 10px; /* Padding within the grid */
 }
 
 .button {
     -fx-text-fill: #ffff;
-    background-color: #191919; /* Bootstrap primary color */
     -fx-background-color: #191919; /* Bootstrap primary color */
-    font-size: 16px; /* Font size for the buttons */
     -fx-font-size: 16px; /* Font size for the buttons */
-    padding: 10px; /* Padding inside the buttons */
     -fx-padding: 10px; /* Padding inside the buttons */
-    border-radius: 5px; /* Rounded corners */
     -fx-border-radius: 5px; /* Rounded corners */
     -fx-background-radius: 5px; /* Rounded background */
-    min-width: 20px; /* Set minimum width to keep size consistent */
     -fx-min-width: 20px; /* Set minimum width to keep size consistent */
-    min-height: 20px; /* Set minimum height to keep size consistent */
     -fx-min-height: 20px; /* Set minimum height to keep size consistent */
     -fx-pref-width: 60px; /* Preferred width to maintain size */
     -fx-pref-height: 60px; /* Preferred height to maintain size */
 }
 
 .button:hover {
-    background-color: rgba(25, 25, 25, 0.93); /* Darker blue on hover */
     -fx-background-color: rgba(25, 25, 25, 0.93); /* Darker blue on hover */
 }
 
 .button:pressed {
-    background-color: rgba(25, 25, 25, 0.85); /* Even darker blue when pressed */
     -fx-background-color: rgba(25, 25, 25, 0.85); /* Even darker blue when pressed */
 }
 
 .button:disabled {
-    background-color: #191919; /* Same color as normal state */
     -fx-background-color: #191919; /* Same color as normal state */
-    opacity: 1; /* Ensure the opacity is the same as normal state */
     -fx-opacity: 1; /* Ensure the opacity is the same as normal state */
     -fx-text-fill: #ffff;
 }
