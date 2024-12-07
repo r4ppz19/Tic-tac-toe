@@ -47,10 +47,10 @@ public class MainController {
             if (MainLogic.checkWin(buttons)) {
                 System.out.println("Someone won");
                 if (playerWrapper.getCurrentPlayer() == 2) {
-                    System.out.println("X win\n\n");
+                    System.out.println("X win\n");
                     new AlertView().playerXWin();
                 } else {
-                    System.out.print("O win\n\n");
+                    System.out.print("O win\n");
                     new AlertView().playerOWin();
                 }
                 MainLogic.resetButtons(buttons);
@@ -59,7 +59,7 @@ public class MainController {
                 MainLogic.resetButtons(buttons);
             }
         } catch (IOException e) {
-            System.out.println("IO Exception");
+            System.out.println("IO Exception whoo hoo!!!");
         }
     }
 }
