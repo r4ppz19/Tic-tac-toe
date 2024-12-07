@@ -1,0 +1,40 @@
+.root {
+    -fx-background-color: #ffffff;
+    -fx-font-family: Lexend, JetBrains Mono;
+}
+
+/* Style for Buttons */
+.button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-border-color: #020202;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px; /* Font size for the buttons */
+    -fx-padding: 10px; /* Padding inside the buttons */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded background */
+    -fx-min-width: 20px; /* Set minimum width to keep size consistent */
+    -fx-min-height: 20px; /* Set minimum height to keep size consistent */
+    -fx-pref-width: 60px; /* Preferred width to maintain size */
+    -fx-pref-height: 60px; /* Preferred height to maintain size */
+}
+
+.button:hover {
+    -fx-background-color: #e2e2e2;
+    -fx-text-fill: #000000;
+}
+
+.button:pressed {
+    -fx-background-color: #d0d0d0;
+    -fx-text-fill: #0033ff;
+}
+
+.button:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Style for Labels */
+.label {
+    -fx-text-fill: #000000;
+}

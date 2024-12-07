@@ -26,7 +26,7 @@ public class Main extends Application {
         Scene scene = new Scene(root);
 
         // Load and apply CSS styles to the scene
-        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/MainDesign.css")).toExternalForm());
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/SecondDesign.css")).toExternalForm());
 
         // Set the application icon and scene to the main stage
         mainStage.getIcons().add(imageIcon);
