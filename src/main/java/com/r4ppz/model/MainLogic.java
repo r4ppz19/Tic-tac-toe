@@ -1,4 +1,4 @@
-package model;
+package com.r4ppz.model;
 
 import javafx.scene.control.Button;
 
@@ -6,7 +6,7 @@ public class MainLogic {
     private static final String PLAYER_X = "X";
     private static final String PLAYER_O = "O";
 
-    public static void switchCharacterBtn(Button button, PlayerWrapper playerWrapper) {
+    public static void switchCharacterBtn(Button button, PlayerModel playerWrapper) {
         if (button.getText().isEmpty()) {
             if (playerWrapper.getCurrentPlayer() == 1) {
                 button.setText(PLAYER_X);

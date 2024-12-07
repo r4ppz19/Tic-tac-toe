@@ -1,4 +1,4 @@
-package model;
+package com.r4ppz;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,10 +17,10 @@ public class Main extends Application {
     @Override
     public void start(Stage mainStage) throws Exception {
         // Load the application icon
-        Image imageIcon = new Image(Objects.requireNonNull(getClass().getResource("/images/r4ppzIcon.png")).toExternalForm());
+        Image imageIcon = new Image(Objects.requireNonNull(getClass().getResource("/image/r4ppzIcon.png")).toExternalForm());
 
         // Load the FXML layout for the main view
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/MainView.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/MainView.fxml")));
 
         // Create a scene with the loaded layout
         Scene scene = new Scene(root);

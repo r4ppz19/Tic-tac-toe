@@ -1,9 +1,9 @@
-package model;
+package com.r4ppz.model;
 
-public class PlayerWrapper {
+public class PlayerModel {
     private int currentPlayer;
 
-    public PlayerWrapper(int currentPlayer) {
+    public PlayerModel(int currentPlayer) {
         this.currentPlayer = currentPlayer;
     }
 

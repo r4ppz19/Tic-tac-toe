@@ -1,4 +1,4 @@
-package model;
+package com.r4ppz.view;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,13 +10,13 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class AlertLoader {
-    Image imageIcon = new Image(Objects.requireNonNull(getClass().getResource("/images/r4ppzIcon.png")).toExternalForm());
+public class AlertView {
+    Image imageIcon = new Image(Objects.requireNonNull(getClass().getResource("/image/r4ppzIcon.png")).toExternalForm());
 
     // Player O win window pop up
     public void playerOWin() throws IOException {
         Stage alertStage1 = new Stage();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/PlayerOWin.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/PlayerOWin.fxml")));
         Scene scene = new Scene(root);
         alertStage1.setScene(scene);
         alertStage1.setTitle(":o");
@@ -29,7 +29,7 @@ public class AlertLoader {
     // Player X win window pop up
     public void playerXWin() throws IOException {
         Stage alertStage2 = new Stage();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/PlayerXWin.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/PlayerXWin.fxml")));
         Scene scene = new Scene(root);
         alertStage2.setScene(scene);
         alertStage2.setTitle(":o");
@@ -42,7 +42,7 @@ public class AlertLoader {
     // Draw window pop up
     public void draw() throws IOException {
         Stage alertStage3 = new Stage();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/DrawView.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/DrawView.fxml")));
         Scene scene = new Scene(root);
         alertStage3.setScene(scene);
         alertStage3.setTitle(":o");

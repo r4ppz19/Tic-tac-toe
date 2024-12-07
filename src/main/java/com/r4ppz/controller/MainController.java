@@ -1,13 +1,14 @@
-package controller;
+package com.r4ppz.controller;
 
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import model.AlertLoader;
-import model.MainLogic;
-import model.PlayerWrapper;
+
+import com.r4ppz.model.MainLogic;
+import com.r4ppz.model.PlayerModel;
+import com.r4ppz.view.AlertView;
 
 public class MainController {
     @FXML
@@ -29,7 +30,7 @@ public class MainController {
     @FXML
     public Button nineBtn;
 
-    private final PlayerWrapper playerWrapper = new PlayerWrapper(1);
+    private final PlayerModel playerWrapper = new PlayerModel(1);
     private Button[] buttons;
 
     public void initialize() {
@@ -47,14 +48,14 @@ public class MainController {
                 System.out.println("Someone won");
                 if (playerWrapper.getCurrentPlayer() == 2) {
                     System.out.println("X win\n\n");
-                    new AlertLoader().playerXWin();
+                    new AlertView().playerXWin();
                 } else {
                     System.out.print("O win\n\n");
-                    new AlertLoader().playerOWin();
+                    new AlertView().playerOWin();
                 }
                 MainLogic.resetButtons(buttons);
             } else if (MainLogic.checkDraw(buttons)) {
-                new AlertLoader().draw();
+                new AlertView().draw();
                 MainLogic.resetButtons(buttons);
             }
         } catch (IOException e) {
